@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: #f5f5f5;
@@ -46,8 +47,9 @@ body {
 }
 
 .hero-meta p {
-    font-size: 1.95rem;
+    font-size: 1.05rem;
     opacity: 0.9;
+    margin-bottom: 6px;
 }
 
 /* ================= HERO BUTTONS ================= */
@@ -195,27 +197,59 @@ footer {
     font-size: 0.85rem;
 }
 
-/* ================= MOBILE ================= */
+/* ================= MOBILE (IMPORTANT) ================= */
 @media (max-width: 900px) {
+
+    /* HERO FIX */
+    .hero {
+        min-height: 75vh;
+        padding: 80px 6% 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+        line-height: 1.2;
+    }
+
+    .hero-sub {
+        font-size: 1.05rem;
+        margin-bottom: 18px;
+    }
+
+    .hero-meta p {
+        font-size: 0.9rem;
+    }
+
+    /* BUTTONS FIX */
+    .hero-actions {
+        position: static;
+        margin-top: 25px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .hero-btn {
+        font-size: 0.8rem;
+        padding: 10px 14px;
+    }
+
+    /* CONTENT FIX */
+    .content {
+        margin: 50px auto;
+        padding: 35px 22px;
+        border-radius: 12px;
+    }
+
+    .content h2 {
+        font-size: 1.6rem;
+    }
+
+    /* GRID FIX */
     .grid {
         grid-template-columns: 1fr;
     }
 
-    .hero h1 {
-        font-size: 2.4rem;
-    }
-
-    .hero-sub {
-        font-size: 1rem;
-    }
-
-    .hero-actions {
-        right: 20px;
-        top: 15px;
-        flex-wrap: wrap;
-    }
-
-    .content {
-        padding: 40px 25px;
+    .results-grid {
+        gap: 20px;
     }
 }
